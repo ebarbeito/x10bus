@@ -6,14 +6,12 @@ Para la compilación y generación de ejecutables se ha utilizado el toolkit Min
 ##Notas de uso rápidas
 ###Compilación con make
 Requiere gcc.exe y make.exe en el PATH. Abrir una terminal. Dentro del directorio del proyecto:
-
 ```$ make_bin.bat # crea ejecutables cliente.exe y controlador.exe
 $ make_clean.bat # limpia ficheros .o y .exe creados por make_bin.bat
 ```
 
 ###Compilación manual
 Abrir una terminal. Dentro del directorio del proyecto:
-
 ```$ cd serial
 $ gcc -ansi -Wall -W -g -c serial.c -o serial.o
 $ cd ..\controller
@@ -31,7 +29,6 @@ Abrir dos terminales y situarlos en el directorio del proyecto:
 
 ###Prueba alternativa (solo prueba del cliente)
 Se puede probar el cliente ejecutándolo por separado. Mostrar por pantalla la lista de bytes en formato carácter que enviará al controlador en caso de concatenarle su salida a la entrada del mismo mediante una tubería.
-
 ```$ client a1 b2 c2 d7 on dim10 off
 ? f ?  ? . ?  ? b ?  ? " ?  ? d ?  ? $ ?  ? c ?  ? # ? 
 ```
